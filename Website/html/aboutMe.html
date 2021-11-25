@@ -1,0 +1,148 @@
+<!DOCTYPE HTML> <!--this is the declaration of HTML 5 to instruct browser what file type to expect -->
+<html lang="en"> <!--HTML lang attribute is used to declare language of webpage in HTML-->
+	<head> <!--Start of head part-->
+		<title>About-Me</title> <!--Title for a web page is set as About-Me-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--Meta view port is used to provide browser instructions to conrol page's dimension and scaling-->
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../css/aboutMe.css"/> <!--CSS file aboutme is imported as external CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for importing logo-->
+	</head> <!--End of head part-->
+	
+	<!--Internal CSS for using in CV-->
+	<style> 
+		.cvborder{
+			border-style: solid;
+			padding-bottom:100px;
+			margin-top:0px;
+			margin-right:10px;
+			margin-left:10px;
+			margin-bottom:50px;
+			padding-left:10px;
+			padding-right:10px;
+			background-color:white;
+			color:black;
+			font-size:25px;
+		}
+	</style><!--Closing Internal CSS-->
+	
+	<div class="heading"> <!--opening class heading -->
+		<header>
+			<H1>Dhiraj Shrestha</H1> 
+		</header>
+		<a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a> <!--for linking About Me webpage with homepage -->
+		<a href="blogs.html"><i class="fa fa-fw fa-book"></i>Blogs</a>  <!--for linking About Me webpage with Blogs webpage -->
+		<a href="project.html"><i class="fa fa-fw fa-line-chart"></i>Projects</a>  <!--for linking About Me webpage with Projects webpage -->
+		<a href="contactform.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>  <!--for linking About Me webpage with Contact webpage -->
+		<a href="research.html"><i class="fa fa-fw fa-search"></i>Research</a>  <!--for linking About Me webpage with Research webpage -->
+	</div> <!--Closing class heading-->
+	
+	 <!--Opening body of About Me webpage with id aboutMeBody -->
+	<body id="aboutMebody">	
+		<div class="piccolumn"> <!--opening class pic column which separate different part for images -->
+				<!--for continuous slide show of pictures-->
+				<img src="../image/slide2.jpg" class="images">
+				<img src="../image/slide1.jpg" class="images">
+				<img src="../image/slide3.jpg" class="images">
+				<img src="../image/slide4.jpg" class="images">
+				<img src="../image/slide5.jpg" class="images">
+		</div> <!--Closing class piccolumn-->
+		
+		<div class="text"> <!--opening class text -->
+			<p><b>Hey pals</b><br>I hope you have a good day and welcome to my profile it's me Dhiraj Shrestha a developer of this website.</p>
+			<p>Currently, I am living in Sundarharaicha muniicipality of morang district which is situated in eastern nepal.<br>
+			Meanwhile I am student of Bachelor of Information Technolgy (BIT) in Itahari International Collage (IIC) .<br>
+			A bit more about me I love to travel and explore the nature. I have quite interest in football as well.</p>
+			<p><br><br><br>I believe in being a life long learner and never miss the oppurtunity to learn some thing new.So I am in phase of continuous learning where I am 
+			gaining more and more knowledge on web development using different source of knowledge.
+			I try best as possible to develop this site .<br>
+			</p>
+		</div> <!--closing class text -->
+		<div class="cvborder"> <!--opening inline CSS class cvborder -->
+			<p style="color:blue; text-align:center;font-size:40px;">Curriculam Vitae (CV)<hr></p>	<!-- Using inline CSS-->										
+			<img  style="display: block; height: auto; max-width: 20%; margin:auto;margin-left:75%;margin-top:-20px; border-radius:10%;padding:20px;" src="../image/cvimage.jpg" alt=""></img><!-- Importing image and Using inline CSS on it-->
+			<div class="cvtext"> <!--opening class cvtext for inserting data -->
+				<p style="color:navy;font-size:35px;";>Personal Details</P><br> <!-- Using inline CSS-->
+				<hr>Name: Dhiraj Shrestha<br><hr>
+				Father Name: Rajendra Shrestha<br><hr>
+				Mother Name: Binu Shrestha<br><hr>
+				Phone No: 9817391792<br><hr>
+				E-mail: dherajshrestha316@gmail.com<br><hr>
+				Nationality: Nepali<br><hr>
+				Religion: Hinduism<br><hr>
+			
+				<br><p style="color:navy;font-size:35px">Qualification and Studies</P><br> <!-- Using inline CSS-->
+				<table border="1" width="auto">
+					<tr>
+						<th>Degree</th>
+						<th>Organization</th>
+						<th>Percentage</th>
+						<th>Year</th>
+					<tr>
+						<td>SLC</td>
+						<td>Tender Feet Boarding School</td>
+						<td>78%</td>
+						<td>2015 A.D
+					</tr>
+					<tr>
+						<td>+2</td>
+						<td>Shree Sainik Awasiya Mahavidyalaya</td>
+						<td>76%</td>
+						<td>2016-17 A.D
+					</tr>
+					<tr>
+						<td>BIT</td>
+						<td>Itahari International Collage</td>
+						<td>----</td>
+						<td>Running
+					</td>
+				</table><br>
+			</div> <!--Closing class cvtext-->
+			<div class="skills"> <!--opening class skills -->
+				<p style="color:navy;font-size:35px">Skills</P><br> <!-- Using inline CSS-->
+				<b>Java programming: </b>Object Oriented Programming in Java, Developed GUI interface for Developer appointment system.<br>
+				<b>Python: </b> Object Oriented Programming in Python,Developed computerized Library management system.<br>
+				<b>Database: </b>Mysql, Developed database management system for shop.<br>
+				<b>Networking: </b>Cisco Networking and Network design.
+			</div> <!--Closing class skills -->
+		</div> <!--Closing class cvborder -->
+	</body> <!--Closing body-->
+	
+	<!--opening footer part-->
+	<footer>&copy 2019 Dhiraj Shrestha
+		<div class="top"><!--opening class top -->
+			<a href="aboutme.html"><i class="fa fa-fw fa-arrow-circle-up"></i>Back To Top</a><!--to go back to top of page -->
+		</div> <!--Closing class top -->
+	</footer> <!--Closing footer -->
+	
+	<!--This section is for javascript for functionality of slide of images -->
+	<script type="text/javascript">
+		index = 0;
+		show(index);
+		slide();
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function slide(){
+			index++;
+			show(index);
+			setTimeout(slide, 5000); 	<!--time for changing image is set 5 second-->
+		}	
+	</script> 	<!--Closing javascript-->
+</html>	<!--Closing HTML-->

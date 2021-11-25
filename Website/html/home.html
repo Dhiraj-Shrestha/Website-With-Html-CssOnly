@@ -1,0 +1,59 @@
+<!DOCTYPE HTML> <!--this is the declaration of HTML 5 to instruct browser what file type to expect -->
+<html lang="en"> <!--HTML lang attribute is used to declare language of webpage in HTML-->
+	<head><!--Start of head part-->
+		<title>Welcome to homepage of my portfolio website</title> <!--Title for a web page is set-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Meta view port is used to provide browser instructions to conrol page's dimension and scaling-->
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../css/home.css"/> <!--CSS file home is imported as external CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--for importing logo-->
+	</head> <!--End of head part-->
+
+
+	<body><!--Start of body part-->
+		<!--this section is for menu option of sidebar with their logo and name and link for different web pages of website-->
+		<div id="homeSidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!--for closing side navigation bar -->
+			<h2><style>h2{color:white;text-align:center;}</style>MENU</h2>
+			<a href="aboutMe.html"><i class="fa fa-fw fa-user-circle"></i>About Me</a> <!--for linking home page with About Me webpage -->
+			<a href="blogs.html"><i class="fa fa-fw fa-book"></i>Blogs</a> <!--for linking home page with Blogs webpage -->
+			<a href="project.html"><i class="fa fa-fw fa-line-chart"></i>Projects</a> <!--for linking home page with Projects webpage -->
+			<a href="contactform.html"><i class="fa fa-fw fa-envelope"></i>Contact</a> <!--for linking home page with Contact webpage -->
+			<a href="research.html"><i class="fa fa-fw fa-search"></i>Research</a>	<!--for linking home page with Research webpage -->
+		</div><!--closing class sidenav -->  
+
+		<div id="menu"> <!--opening id menu -->
+			<div class="background"> <!--Opening class background for background image -->
+				<span id="span" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click here to open menu </span> <!--for closing side navigation bar -->
+				<h1>Dhiraj Shrestha</h1>
+				<h4>A web designer
+					<p>
+						<div class="text"><i><ins>You become what you believe</i></ins></div><!--using format of class text -->
+					</p>
+				</h4>
+				<a href="https://www.facebook.com/meccolov/" class="fa fa-facebook-official"></a> <!--for linking website with facebook -->
+				<a href="https://www.youtube.com/channel/UC-pTUzuVcOCqM6mx_dGf_7Q" class="fa fa-youtube-play"></a> <!--for linking website with youtube -->
+				<a href="https://instagram.com/cresthadhiraj?utm_source=ig_profile_share&igshid=zy3i9zhk9y3o" class="fa fa-instagram"></a> <!--for linking website with instagram -->
+			</div> <!--Closing class background -->
+		</div> <!--Closing id attribute menu -->
+	</body> <!--Closing body part-->
+	<footer>&copy 2019 Dhiraj Shrestha </footer> <!--Assigning copyright in footer -->
+	
+	<!--This section is for javascript for functionality of side navigation bar -->
+	<script>
+		function openNav() {
+			document.getElementById("homeSidenav").style.width = "250px";
+			document.getElementById("menu").style.marginLeft= "250px";
+			document.getElementById("span").style.display="none";
+			
+			
+				  
+			}
+
+			function closeNav() {
+				document.getElementById("homeSidenav").style.width = "0";
+				document.getElementById("menu").style.marginLeft= "0";
+				document.getElementById("span").style.display="block";
+
+			}
+	</script><!--closing javascript part -->
+</html> <!--Closing html -->

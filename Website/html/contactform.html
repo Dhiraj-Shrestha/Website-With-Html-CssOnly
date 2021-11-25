@@ -1,0 +1,109 @@
+<!DOCTYPE HTML><!--this is the declaration of HTML 5 to instruct browser what file type to expect -->
+
+<html lang="en"><!--HTML lang attribute is used to declare language of webpage-->
+   <head>	
+	 <title> Form</title> <!--Title for a web page is given as Form-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Meta view port is used to provide browser instructions to conrol page's dimension and scaling-->
+	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	 <link rel="stylesheet"  type="text/css"  href="../css/aboutMe.css"><!--CSS file aboutme is imported as external CSS-->
+	 <link rel="stylesheet"  type="text/css"  href="../css/form.css"><!--CSS file form is imported as external CSS-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Font awasome is imported for logo used in website-->
+	</head>
+	<div class="heading"><!--opening of class heading-->
+		<header>
+			<H1>Dhiraj Shrestha</H1> 
+		</header>
+		<!--Different web pages are linked with each other-->
+		<a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a> <!--for linking Contact webpage with homepage -->
+		<a href="aboutMe.html"><i class="fa fa-fw fa-user-circle"></i>About Me</a> <!--for linking Contact webpage with About Me webpage -->
+		<a href="blogs.html"><i class="fa fa-fw fa-book"></i>Blogs</a> <!--for linking Contact webpage with Blogs webpage -->
+		<a href="project.html"><i class="fa fa-fw fa-line-chart"></i>Projects</a> <!--for linking Contact webpage with Projects webpage -->
+		<a href="research.html"><i class="fa fa-fw fa-search"></i>Research</a> <!--for linking Contact webpage with Research webpage -->
+	</div><!--closing class heading-->
+	
+	<!--Opening body of Projects webpage with id formbody -->	
+   <body id="formbody">		
+		<form class="formpart" onsubmit="formvalid()"action="MAILTO:dherajshrestha316@gmail.com" method="post"enctype="text/plain"> <!--Opening form For sending mail to email id when form is submitted succesfully-->
+			FULL NAME:<br> <INPUT type="text" id="NAME" placeholder="Enter your full name"  size="40" style="height:30px;" name="Name" required><br><!--Input section for name of users-->
+			
+			<br>FULL ADDRESS:<br> <INPUT type="text" id="FULLADDRESS" placeholder="Enter your address"  size="40" style="height:30px;" name="Address"required><br><!--Input section for address of users-->
+						
+			<br>E-MAIL: <br><INPUT type="email" id="EMAIL" placeholder="Enter your e-mail id" size="40" style="height:30px;" name="E-MAIL"required><br><!--Input section for e-mail of users-->
+				
+			<br>COUNTRY:
+			<SELECT id="nation" name="Country"> <!--For selecting country -->
+				<OPTION>Nepal</OPTION>
+				<OPTION>India</OPTION>
+				<OPTION>America</OPTION>
+				<OPTION>France</OPTION>
+				<OPTION>Island</OPTION>
+				<OPTION>China</OPTION>
+				<OPTION>North Korea</OPTION>
+				<OPTION>South Korea</OPTION>
+				<OPTION>Brazil</OPTION>
+				<OPTION>Russia</OPTION>
+				<OPTION>United Kingdom</OPTION>
+				<OPTION>Japan</OPTION>
+				<OPTION>Sri Lanka</OPTION>
+				<OPTION>Maldives</OPTION>
+				<OPTION>South Africa</OPTION>
+				<OPTION>Thiland</OPTION>
+				<OPTION>Bhutan</OPTION>
+				<OPTION>Canada</OPTION>
+				<OPTION>Other</OPTION>
+			</SELECT><br>		
+							
+			<br>PHONE NUMBER:<br>
+			<SELECT> <!--for selecting pin code -->
+				<OPTION>+977</OPTION>
+				<OPTION>+912</OPTION>
+				<OPTION>+913</OPTION>
+				<OPTION>+915</OPTION>
+				<OPTION>+916</OPTION>
+				<OPTION>+917</OPTION>
+				<OPTION>+918</OPTION>
+				<OPTION>+919</OPTION>
+				<OPTION>+920</OPTION>
+				<OPTION>+921</OPTION>
+				<OPTION>+922</OPTION>
+				<OPTION>+911</OPTION>
+				<OPTION>+988</OPTION>
+				<OPTION>+989</OPTION>
+				<OPTION>+990</OPTION>
+				<OPTION>+991</OPTION>
+				<OPTION>+992</OPTION>
+				<OPTION>+993</OPTION>
+			</SELECT>
+						
+			<INPUT type="number" id= "NUMBER" placeholder="98XXXXXXXX" name="Contact Number"  size="30" style="height:30px;"required><br> <!--Input section for  contact number of users-->
+					
+			<br>REVIEW:<br>
+			<Textarea name="Review" id = "OPINION" placeholder = "Write about your opinion..."rows="15" cols="40"required></textarea><br> <!--Input section for opinion,queries of users-->		
+			<br><INPUT type="submit" class="button" value="SUBMIT FORM"><!--For submitting the form which use class button for text style and hover -->
+			<INPUT type="Reset"class="button" value="CLEAR"><br><br> <!--For clearing value of text fields which use class button for text style and hover-->	
+			
+			<p><b>Connect with me in social media</b></p><br>
+			<a href="https://www.facebook.com/meccolov/" class="fa fa-facebook-official"></a> <!--for linking website with facebook -->
+			<a href="https://www.youtube.com/channel/UC-pTUzuVcOCqM6mx_dGf_7Q" class="fa fa-youtube-play"></a> <!--for linking website youtube -->
+			<a href="https://instagram.com/cresthadhiraj?utm_source=ig_profile_share&igshid=zy3i9zhk9y3o" class="fa fa-instagram"></a> <!--for linking website with instagram -->
+		</form><!--Closing form -->
+	</body> <!--Closing body -->
+	
+	<footer>&copy 2019 Dhiraj Shrestha </footer> <!--Assigning copyright in footer part using style of aboutme css file-->
+	
+	<!--This section is for javascript for form validation while submitting -->
+	<script>	
+		function formvalid(){
+			var FULLNAME=document.getElementById("NAME").value;  <!--Assigning variable value get from the field for name using unique ID-->
+			var COUNTRY=document.getElementById("nation").value; <!--Assigning variable value get from the select option using unique ID-->
+			var FULLADDRES=document.getElementById("FULLADDRESS").value; <!--Assigning variable value get from the field for address using unique ID-->
+			var EMAIL=document.getElementById("EMAIL").value; <!--Assigning variable value get from the field for email using unique ID-->
+			var PHONENUM=document.getElementById("NUMBER").value; <!--Assigning variable value get from the field for contact number using unique ID-->
+			var REVIEW=document.getElementById("OPINION").value; <!--Assigning variable value get from the field for review using unique ID-->
+
+			if(FULLNAME!="" && FULLADDRES!="" && EMAIL!="" && COUNTRY!=""&& PHONENUM!="" && REVIEW!=""){
+				alert("Thank you I will try contact you soon");
+			}
+		}	
+	</script> <!--closing javascript part -->
+</html>  <!--closing HTMl-->

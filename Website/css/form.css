@@ -1,0 +1,120 @@
+/*this is the css for webpage Contact which is used along with CSS aboutme to create a webpage*/
+
+/*ID of body in Contact web page to manage fonts,style,background and position of elements*/
+#formbody{
+	font-family: Arial,sens-serif;
+	font-size:20px;
+	background-image: url(../image/formBackground.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top:0px;
+	margin-left:0px;
+	color:white;
+	
+}
+/* Class for maintaing position, background and opacity of form part*/
+.formpart{
+	margin-top:10px;
+	margin-left:75%;
+	padding-left:20px;
+	padding-bottom:15px;
+	padding-top:5px;
+	background:black;
+	opacity:0.7;
+	
+}
+
+/*For position,size,background,display type,color and style of submit and clear button */
+.button{
+	background:black;
+	float:left;
+	color:green;
+	font-size:20px;
+	opacity:1;
+	margin-left:20px;
+}
+
+/*For slecting elements when mouse is placed over them and change color of text in button*/	
+.button:hover{
+	color:red;
+}
+
+/*For position with in class fa*/
+}
+.fa {
+	  padding: 5px;
+}
+
+/*For slecting elements when mouse is placed over them and change color of that icon element*/
+.fa:hover {	
+	color:yellow;
+}
+
+/*For slecting color,position of icon facebook*/
+.fa-facebook-official {
+	background:blue;
+	color: white;
+	margin-left:20px;
+	width:20px;
+	height:10px;
+	text-align:center;
+	padding:10px;
+}
+
+/*For slecting color,position of icon youtube*/
+.fa-youtube-play {
+	background: red;
+	color: white;
+	margin-left:20px;
+	width:20px;
+	height:10px;
+	text-align:center;
+	padding:10px;
+}
+
+/*For slecting color,position of icon instagram*/
+.fa-instagram{
+	background:white;
+	color:red;
+	margin-left:20px;
+	width:20px;
+	height:10px;
+	text-align:center;
+	padding:10px;
+}
+
+
+/*given section below is for responsive website when display size is decrease to different size than full width of desktop display*/
+@media screen and (max-width:1500px) {
+	#formbody{
+		width:100%
+	}
+	.formpart{
+		width:100%;
+		margin-right:20%;	
+	}
+}
+@media screen and (max-width:1350px) {
+	#formbody{
+		width:100%
+	}
+	.formpart{
+		width:32%;
+		margin-left:68%;
+		opacity:0.7;	
+	}
+}
+
+
+@media screen and (max-width:1000px) {
+	#formbody{
+		width:100%
+	}
+	.formpart{
+		width:100%;
+		margin-top:0;
+		margin-left:0%;
+		padding-top:3px;
+		opacity:0.7;		
+	}
+}

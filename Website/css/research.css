@@ -1,0 +1,83 @@
+/*this is the css for webpage Research which is used along with CSS aboutme to create a webpage*/
+
+/* for default CSS box-sizing behaviour*/
+* {
+  box-sizing:border-box;
+}
+
+/*ID of body in Projects web page to manage fonts,style,background and position of elements*/
+#researchbody{
+	font-family: Arial,sens-serif;
+	font-size:20px;
+	background-image: url(../image/aboutMeBackground.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top:0px;
+	margin-left:0px;
+	text-align:justify;
+}
+
+/*For position, border style and managing position of elements in webpage*/
+.bounds{
+	border-style: solid;
+	padding-bottom:100px;
+	padding-left:10px;
+	padding-right:5px;
+	padding-top:20px;
+}
+
+	
+/*after each row class manage them */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* class for maintaing position,display type for text section*/
+.column-word {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+/* class for maintaing position,display type for image section*/
+.picture {
+  float: left;
+  width: 60%%;
+  padding: 20px;
+}
+
+/* class for seting size, color for heading of research*/
+.research {
+  font-size: 30px;
+  opacity:0.8;
+  color:red;
+}
+
+/* class for seting size, color of heading for research number*/
+.word-heading {
+  font-size: 35px
+}
+
+/*For managing display type,height and width of images used in Research webpage*/
+img {
+  display: float;
+  height: auto;
+  max-width: 100%;
+}
+
+/*given section below is for responsive website when display size is decrease to different size than full width of desktop display*/
+@media screen and (max-width: 1770px) {
+ .column-word{width:100%;}
+  .picture {
+    width:100%;
+	text-align:center;
+  }
+  img {
+    margin: auto;
+	max-width:45%;
+  }
+}
+
+

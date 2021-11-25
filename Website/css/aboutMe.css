@@ -1,0 +1,266 @@
+/*this is the css for webpage About Me and is imported to other web pages for managing uniform heading style and other required styles*/
+
+/*setting margin and padding to 0 to make all elements look same in all browsers*/
+*{
+	margin:0px;
+	padding:0px;
+}
+
+/*For managing height and display type of header*/
+header {
+	
+	height:30px;
+	display:inline-block;
+}
+
+/* class for maintaing display type,width,color of heading section*/
+.heading{
+	display:inline-block;
+	padding:5px;
+	width:100%;
+	background:black;
+	color:white;
+}
+
+/*For text colors, position and display style within class heading*/
+.heading a{
+	display:inline-block;
+	color:white;
+	margin-left:140px;
+	margin-top:-60px;
+	font-size:30px;
+}
+
+/*For slecting elements when mouse is placed over them and change color of that element*/
+.heading a:hover{
+	color:yellow;
+}
+
+
+
+/*ID of body in About Me web page to manage fonts,style,background and position of elements*/
+#aboutMebody{
+	font-family: Arial,sens-serif;
+	font-size:20px;
+	background-image: url(../image/aboutMeBackground.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top:0px;
+	margin-left:0px;
+	text-align:justify;
+}
+
+/* class for maintaing position for image section*/
+.piccolumn{
+	margin-left:75%;
+	padding-top:25px;
+	
+}
+
+/* class for image section and to manage its border,position and so on within class piccolumn*/
+.images{
+	height: 250px;
+	width: 250px;
+	border-radius:100%;
+	margin-left:100px;
+	box-shadow: 10px 10px grey;
+}
+
+/* class for maintaing position for text section */
+.text{
+	font-size:30px;
+	padding-bottom:100px;
+	padding-top:20px;
+	padding-left:20px;
+	margin-top:-15%;
+}
+
+/* class for maintaing position for text section of details with in class cvborder */
+.cvtext{
+	color:black;
+	margin-top:-25%;
+	font-size:25px;
+	width:75%;
+}
+
+/*To set position, style, color of elements within footer*/
+footer{
+	position:auto;
+	width: 100%;
+	padding:10px;
+	height: 60px;
+	background-color: black;
+	color:white;
+	bottom: 0;
+	text-align:center;
+}
+
+/* class for maintaing position for text to go back to top within footer section */
+.top{
+	width:auto;
+	text-align:center;
+	
+}
+
+/*given section below is for responsive website when display size is decrease to different size than full width of desktop display*/
+@media screen and (max-width:1800px) {
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	.heading a{
+		margin-left:95px;
+	}
+	.piccolumn{
+		margin:0;
+		width:30%;
+		margin-left:70%;
+	}
+	.text{
+		width:70%;
+		padding-bottom:100px;
+	}
+	.cvimage{
+		display: block;
+		height: auto;
+		max-width: 80%;
+		margin:auto;
+		padding:20px;
+		}
+	
+	
+}
+@media screen and (max-width:1500px) {
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	.heading a{
+		margin-left:20px;
+	}
+	.piccolumn{
+		margin:0;
+		width:30%;
+		margin-left:60%;
+		padding:10px;
+	}
+	.text{
+		width:70%;
+		padding-bottom:100px;
+	}
+}
+@media screen and (max-width:1150px) {
+  
+	.heading a{
+		margin-left:20px;
+		font-size:25px;
+	}
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	.piccolumn{
+		margin:0;
+		width:30%;
+		margin-left:60%;
+		padding:10px;
+	}
+	.text{
+		width:70%;
+		padding-bottom:100px;
+		padding-right:20px;
+	}
+}
+
+
+@media screen and (max-width:1000px) {
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	header{
+		width:100%;
+	}
+	.heading a{
+		margin-left:40px;
+		font-size:20px;
+	}
+	.piccolumn{
+		margin:30px;
+		width:100%;
+		padding-bottom:20px;
+	}
+	.text{
+		width:100%;
+		padding-bottom:100px;
+	}
+	.cvtext,.skills{
+		font-size:15px;
+	}
+}
+@media screen and (max-width:750px) {
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	header{
+		width:100%;
+	}
+	.heading a{
+		margin-left:35px;
+		font-size:20px;
+	}
+	.piccolumn{
+		margin:30px;
+		width:100%;
+		padding-bottom:20px;
+	}
+	.text{
+		width:100%;
+		padding-bottom:100px;
+	}
+	.cvtext{
+		font-size:15px;
+	}
+	.skills{
+		width:100%;
+		font-size:15px;
+	}
+}
+@media screen and (max-width:700px) {
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	header{
+		width:100%;
+	}
+	.heading a{
+		margin-left:7px;
+		font-size:17px;
+		padding-left:0;
+	}
+}
+@media screen and (max-width:490px) {
+	#aboutMebody {
+	  width:100%;
+	  
+	}
+	header{
+		width:100%;
+	}
+	.heading a{
+		margin-left:7px;
+		font-size:15px;
+		padding-left:0;
+	}
+	.piccolumn{
+		margin:30px;
+		width:100%;
+		padding-bottom:20px;
+	}
+	.text{
+		width:100%;
+		padding-bottom:100px;
+	}
+}

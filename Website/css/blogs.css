@@ -1,0 +1,32 @@
+/*this is the css for webpage Blogs which is used along with CSS aboutme to create a webpage*/
+
+/*ID of body in Blogs web page to manage fonts,style,background and position of elements*/
+#blogstext{
+	font-family: Arial,sens-serif;
+	font-size:20px;
+	background-color: gray;
+	margin-top:0px;
+	margin-left:0px;
+	color:white;
+	text-align:justify;
+	
+}
+
+/*For position, border style and managing position of elements in webpage*/
+.border{
+	border-style: solid;
+	padding-bottom:100px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/*For managing display type,height,width and position of images used in Blogs webpage*/
+img {
+		display: block;
+		height: auto;
+		max-width: 80%;
+		margin:auto;
+		padding:20px;
+	}
+
+
